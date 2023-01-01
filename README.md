@@ -1,8 +1,8 @@
 # Example SOAP Server
 
-SOAP server implementation based on the [SOAP component](https://github.com/laminas/laminas-soap) of the Laminas project. Generates WSDL to be suitable for testing of client software.
+SOAP server implementation using the [SOAP component](https://github.com/laminas/laminas-soap) of the Laminas project. Generates WSDL to be suitable for testing of client software.
 
-## Install
+## Install Dependencies
 
     composer install
 
