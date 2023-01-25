@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Laminas\Soap\AutoDiscover;
 use Laminas\Soap\Server;
+use SoapServer\WebService\AddressBook;
 use SoapServer\WebService\Calculator;
 use SoapServer\WebService\StringMatch;
 
@@ -17,6 +18,7 @@ define('BASE_URI', getenv('URI') ? rtrim(getenv('URI'), '/') . '/' : 'http://loc
 define('SERVICES', [
     'calculator' => Calculator::class,
     'string-match' => StringMatch::class,
+    'address-book' => AddressBook::class
 ]);
 
 function handle_request(string $name): void
